@@ -1,0 +1,9 @@
+@mixin border-light {
+    border: solid 1px;
+    border-color: $clr-light-primary;
+}
+
+@mixin invert {
+    background-color: $clr-light-primary;
+    color: $clr-dark-primary;
+}

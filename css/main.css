@@ -1,0 +1,401 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  font-family: "Courier New", monospace;
+  box-sizing: border-box;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.37861;
+  }
+  5% {
+    opacity: 0.44769;
+  }
+  10% {
+    opacity: 0.53604;
+  }
+  15% {
+    opacity: 0.90626;
+  }
+  20% {
+    opacity: 0.38128;
+  }
+  25% {
+    opacity: 0.83891;
+  }
+  30% {
+    opacity: 0.65583;
+  }
+  35% {
+    opacity: 0.67807;
+  }
+  40% {
+    opacity: 0.46559;
+  }
+  45% {
+    opacity: 0.84693;
+  }
+  50% {
+    opacity: 0.96019;
+  }
+  55% {
+    opacity: 0.38594;
+  }
+  60% {
+    opacity: 0.50313;
+  }
+  65% {
+    opacity: 0.71988;
+  }
+  70% {
+    opacity: 0.53455;
+  }
+  75% {
+    opacity: 0.47288;
+  }
+  80% {
+    opacity: 0.71428;
+  }
+  85% {
+    opacity: 0.70419;
+  }
+  90% {
+    opacity: 0.7003;
+  }
+  95% {
+    opacity: 0.36108;
+  }
+  100% {
+    opacity: 0.54387;
+  }
+}
+@keyframes textShadow {
+  0% {
+    text-shadow: 0.4389924193px 0 1px rgba(0, 30, 255, 0.5), -0.4389924193px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  5% {
+    text-shadow: 2.7928974011px 0 1px rgba(0, 30, 255, 0.5), -2.7928974011px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  10% {
+    text-shadow: 0.0295627584px 0 1px rgba(0, 30, 255, 0.5), -0.0295627584px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  15% {
+    text-shadow: 0.4021853855px 0 1px rgba(0, 30, 255, 0.5), -0.4021853855px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  20% {
+    text-shadow: 3.47940379px 0 1px rgba(0, 30, 255, 0.5), -3.47940379px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  25% {
+    text-shadow: 1.6125630401px 0 1px rgba(0, 30, 255, 0.5), -1.6125630401px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  30% {
+    text-shadow: 0.7015590085px 0 1px rgba(0, 30, 255, 0.5), -0.7015590085px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  35% {
+    text-shadow: 3.8969140477px 0 1px rgba(0, 30, 255, 0.5), -3.8969140477px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  40% {
+    text-shadow: 3.8709056148px 0 1px rgba(0, 30, 255, 0.5), -3.8709056148px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  45% {
+    text-shadow: 2.2310569634px 0 1px rgba(0, 30, 255, 0.5), -2.2310569634px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  50% {
+    text-shadow: 0.0808429042px 0 1px rgba(0, 30, 255, 0.5), -0.0808429042px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  55% {
+    text-shadow: 2.3758461067px 0 1px rgba(0, 30, 255, 0.5), -2.3758461067px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  60% {
+    text-shadow: 2.2021930511px 0 1px rgba(0, 30, 255, 0.5), -2.2021930511px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  65% {
+    text-shadow: 2.8638780615px 0 1px rgba(0, 30, 255, 0.5), -2.8638780615px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  70% {
+    text-shadow: 0.4887402516px 0 1px rgba(0, 30, 255, 0.5), -0.4887402516px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  75% {
+    text-shadow: 1.8948491306px 0 1px rgba(0, 30, 255, 0.5), -1.8948491306px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  80% {
+    text-shadow: 0.0833037308px 0 1px rgba(0, 30, 255, 0.5), -0.0833037308px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  85% {
+    text-shadow: 0.0976982726px 0 1px rgba(0, 30, 255, 0.5), -0.0976982726px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  90% {
+    text-shadow: 3.4433397615px 0 1px rgba(0, 30, 255, 0.5), -3.4433397615px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  95% {
+    text-shadow: 2.1841838853px 0 1px rgba(0, 30, 255, 0.5), -2.1841838853px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  100% {
+    text-shadow: 2.6208764474px 0 1px rgba(0, 30, 255, 0.5), -2.6208764474px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+}
+body {
+  background-color: #020208;
+  color: #E0FCDF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 8rem);
+  position: relative;
+  margin: 4rem;
+  border: solid 1px;
+  border-color: #E0FCDF;
+  border-width: 2px;
+  padding: 0.5rem;
+}
+main::before {
+  content: "ASCII.CONVERTOR";
+  position: absolute;
+  inset-inline: 0;
+  top: -0.25em;
+  width: fit-content;
+  margin-inline: auto;
+  padding-inline: 1em;
+  background-color: #020208;
+  color: #E0FCDF;
+}
+
+#screen {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+  height: inherit;
+  border: solid 1px;
+  border-color: #E0FCDF;
+}
+
+nav {
+  border: solid 1px;
+  border-color: #E0FCDF;
+  padding: 1.5em;
+}
+nav ul li {
+  display: inline;
+  padding-inline: 1em;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: solid 1px transparent;
+}
+nav ul li:hover {
+  border: solid 1px;
+  border-color: #E0FCDF;
+}
+nav ul li:last-child {
+  float: right;
+  padding: 0;
+  background-color: #E0FCDF;
+  color: #020208;
+}
+
+#comput:hover {
+  cursor: crosshair;
+}
+
+#columns {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+}
+@media screen and (max-width: 1000px) {
+  #columns {
+    flex-direction: column;
+  }
+}
+#columns #sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 20%;
+  border: solid 1px;
+  border-color: #E0FCDF;
+  padding: 2em;
+}
+#columns #sidebar hr {
+  border: solid 1px;
+  border-color: #E0FCDF;
+}
+#columns #sidebar p {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 1rem;
+  line-height: 2em;
+}
+#columns #sidebar p:first-of-type {
+  justify-content: space-between;
+  padding-top: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+#columns #sidebar #input-block {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+  font-size: 1.5em;
+}
+#columns #sidebar #input-block label {
+  margin: 0.25rem;
+  border: solid 1px;
+  border-color: #E0FCDF;
+  text-align: center;
+  font-weight: 800;
+}
+#columns #sidebar #input-block label:hover {
+  cursor: pointer;
+}
+#columns #sidebar #input-block input {
+  display: none;
+}
+#columns #sidebar #input-block button {
+  background-color: #E0FCDF;
+  color: #020208;
+  border: none;
+  padding: 0.25em;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+#columns #sidebar #input-block button:hover {
+  cursor: pointer;
+}
+#columns #display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#columns #display #ascii-container {
+  flex: 2.5;
+  position: relative;
+  border: solid 1px;
+  border-color: #E0FCDF;
+  padding: 2em;
+}
+#columns #display #ascii-container canvas {
+  display: none;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+#columns #display #ascii-container pre {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  font-size: 0.5rem;
+}
+#columns #display #ascii-choices {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#columns #display #ascii-choices .ascii-choice {
+  flex: 1 1 250px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  border: solid 1px;
+  border-color: #E0FCDF;
+  cursor: pointer;
+}
+#columns #display #ascii-choices .ascii-choice pre {
+  width: fit-content;
+  height: fit-content;
+  margin-block: 0.5rem;
+  margin-inline: auto;
+  font-size: 0.2rem;
+}
+
+.frame, #columns #sidebar #input-block label:hover, #columns #display #ascii-choices .ascii-choice:hover {
+  box-shadow: inset 0 0 0 6px #020208, inset 0 0 0 8px #E0FCDF;
+}
+
+.crt::after, main::after, #columns #display #ascii-container pre::after, #columns #display #ascii-choices .ascii-choice pre::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+.crt, main, #columns #display #ascii-container pre, #columns #display #ascii-choices .ascii-choice pre {
+  animation: textShadow 1.6s infinite;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,235 @@
+body {
+    background-color: $clr-dark-primary;
+    color: $clr-light-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh);
+}
+
+main {
+    display: flex;
+    width: calc(100%);
+    min-height: calc(100vh - 8rem);
+    position: relative;
+    margin: 4rem;
+    @include border-light;
+    border-width: 2px;
+    padding: .5rem;
+    @extend .crt;
+
+    &::before {
+        content: 'ASCII.CONVERTOR';
+        position: absolute;
+        inset-inline: 0;
+        top: calc(-.25em);
+        width: fit-content;
+        margin-inline: auto;
+        padding-inline: 1em;
+        background-color: $clr-dark-primary;
+        color: $clr-light-primary;
+    }
+}
+
+#screen {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    width: 100%;
+    height: inherit;
+    @include border-light;
+}
+
+nav {
+    @include border-light;
+    padding: 1.5em;
+
+    ul li {
+        display: inline;
+        padding-inline: 1em;
+        font-size: 1.5em;
+        font-weight: 800;
+        text-transform: uppercase;
+        border: solid 1px transparent;
+
+        &:hover {
+            @include border-light;
+        }
+
+        &:last-child {
+            float: right;
+            padding: 0;
+            @include invert;
+        }
+    }
+}
+
+#comput:hover {
+    cursor: crosshair;
+}
+
+#columns {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+
+    @media screen and (max-width: 1000px) {
+        & {
+            flex-direction: column;
+        }
+    }
+
+    #sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 20%;
+        @include border-light;
+        padding: 2em;
+
+
+        hr {
+            @include border-light;
+        }
+
+        p {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-block: 1rem;
+            line-height: 2em;
+        }
+
+        p:first-of-type {
+            justify-content: space-between;
+            padding-top: 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+            line-height: 1em;
+        }
+
+        #input-block {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 1rem;
+            font-size: 1.5em;
+
+            label {
+                margin: .25rem;
+                @include border-light;
+                text-align: center;
+                font-weight: 800;
+
+                &:hover {
+                    cursor: pointer;
+                    @extend .frame;
+                }
+            }
+
+            input {
+                display: none;
+            }
+
+            button {
+                @include invert;
+                border: none;
+                padding: .25em;
+                font-size: 1.5em;
+                font-weight: 800;
+                text-transform: uppercase;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    #display {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        #ascii-container {
+            flex: 2.5;
+            position: relative;
+            @include border-light;
+            padding: 2em;
+
+            canvas {
+                display: none;
+                width: fit-content;
+                height: fit-content;
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+
+            pre {
+                width: fit-content;
+                height: fit-content;
+                margin: auto;
+                font-size: .5rem;
+                @extend .crt;
+            }
+        }
+
+        #ascii-choices {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .ascii-choice {
+                flex: 1 1 250px;
+                position: relative;
+                display: grid;
+                place-items: center;
+                @include border-light;
+                cursor: pointer;
+
+                &:hover {
+                    @extend .frame;
+                }
+
+                pre {
+                    width: fit-content;
+                    height: fit-content;
+                    margin-block: .5rem;
+                    margin-inline: auto;
+                    font-size: .2rem;
+                    @extend .crt;
+                }
+            }
+        }
+    }
+}
+
+.frame {
+    box-shadow: inset 0 0 0 6px $clr-dark-primary, inset 0 0 0 8px $clr-light-primary, ;
+}
+
+.crt::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(18, 16, 16, 0.1);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    animation: flicker 0.15s infinite;
+}
+
+.crt {
+    animation: textShadow 1.6s infinite;
+}
